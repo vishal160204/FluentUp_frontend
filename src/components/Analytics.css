@@ -1,0 +1,408 @@
+/* Analytics Page Layout */
+.analytics-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* Analytics Header */
+.analytics-header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 12px 0;
+}
+
+.analytics-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.analytics-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon-dark {
+  width: 32px;
+  height: 32px;
+  background: #1a202c;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analytics-logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.analytics-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu-item {
+  color: #4a5568;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.menu-item.active {
+  color: #1a202c;
+  border-bottom-color: #1a202c;
+}
+
+.menu-item:hover {
+  color: #1a202c;
+}
+
+.analytics-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.confidence-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f7fafc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.confidence-label {
+  color: #4a5568;
+}
+
+.confidence-value {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.notification-icon {
+  color: #4a5568;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.notification-icon:hover {
+  background: #f7fafc;
+  color: #1a202c;
+}
+
+.user-profile {
+  width: 36px;
+  height: 36px;
+  background: #1a202c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Analytics Main Content */
+.analytics-main {
+  padding: 32px 0;
+}
+
+/* Title Section */
+.analytics-title-section {
+  margin-bottom: 32px;
+}
+
+.analytics-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 8px;
+}
+
+.analytics-subtitle {
+  color: #4a5568;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Analytics Stats Grid */
+.analytics-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.analytics-stat-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all 0.2s;
+}
+
+.analytics-stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  background: #f7fafc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a5568;
+  flex-shrink: 0;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-label {
+  color: #4a5568;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 4px;
+}
+
+.stat-change {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.stat-change.positive {
+  color: #10b981;
+}
+
+.stat-period {
+  font-size: 12px;
+  color: #4a5568;
+}
+
+/* Analytics Content Sections */
+.analytics-content-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.analytics-section-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* Recent AI Achievements */
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+  transition: all 0.2s;
+}
+
+.achievement-item:hover {
+  border-color: #e2e8f0;
+  background: #f8fafc;
+}
+
+.achievement-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-title {
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.achievement-description {
+  color: #4a5568;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* AI-Recommended Focus Areas */
+.focus-areas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.focus-area-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.focus-area-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.focus-area-skill {
+  font-weight: 600;
+  color: #1a202c;
+  font-size: 16px;
+}
+
+.focus-area-score {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.focus-area-bar {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.focus-area-progress {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.focus-area-recommendation {
+  color: #4a5568;
+  font-size: 13px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .analytics-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .analytics-content-sections {
+    grid-template-columns: 1fr;
+  }
+  
+  .analytics-menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .analytics-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .analytics-menu {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .analytics-user {
+    order: 2;
+  }
+  
+  .analytics-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .analytics-main {
+    padding: 16px 0;
+  }
+  
+  .analytics-title {
+    font-size: 28px;
+  }
+  
+  .analytics-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .analytics-menu {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    font-size: 14px;
+  }
+  
+  .confidence-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .analytics-section-card {
+    padding: 16px;
+  }
+  
+  .achievement-item {
+    padding: 12px;
+  }
+  
+  .focus-area-header {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+}
